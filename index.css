@@ -1,0 +1,132 @@
+
+* {
+  /* margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px; */
+
+
+}
+
+body header {
+display: inline;
+position: absolute;
+height: 70px;
+width: 100%;
+top: 0px;
+background: #ffffff;
+}
+
+body header h1 {
+margin-left: 70px;
+position: relative;
+width: 189px;
+height: 28px;
+top: 20px;
+
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+font-size: 24.375px;
+line-height: 29px;
+
+text-transform: uppercase;
+
+color: #000000;
+}
+
+body a#github img{
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 1350px;
+  top: 20px;
+
+}
+
+body a#linkedin img {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 1400px;
+  top: 20px;
+}
+
+body main {
+  margin: none;
+  padding: none;
+  background-color: rgba(198, 206, 240, 0.568);
+  display: inline-block;
+}
+
+
+body main .mainly-content h1 {
+  
+  margin-top: 125px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: 'Gayathri', sans-serif;
+}
+
+body main  .mainly-content h3 {
+  /* text-decoration: underline; */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body main .mainly-content ul {
+  font-size: 24px;
+  text-align: center;
+  list-style-type: none;
+  font-family: 'Gayathri', sans-serif;
+}
+
+
+body main .mainly-content ul li:hover {
+  transition: 200ms;
+  font-weight: bold;
+  color: blue;
+}
+
+body main .about-me {
+  margin-top: 30px;
+  margin-left: 10%;
+  max-width: 80%;
+  text-align: center;
+  font-size: 24px;
+}
+
+body main .contact-me {
+  
+  margin-top: 40px;
+  text-align: center;
+}
+
+body main .contact-me h3 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: blue;
+  font-weight: bold;
+}
+
+body main .contact-me .links a{
+ 
+  font-size: 22px;
+  align-items: center;
+  color: black;
+  
+}
+
+body main .contact-me a:hover {
+  color: rgb(13, 24, 122);
+}
+
+body main .contact-me p {
+  font-size: 22px;
+}
+
+
+
+
