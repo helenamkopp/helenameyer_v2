@@ -2,7 +2,6 @@
 
 body header {
 display: flex;
-position: absolute;
 height: 70px;
 width: 100%;
 top: 0px;
@@ -10,6 +9,8 @@ background: #ffffff;
 }
 
 body header h1 {
+flex-direction: column;
+justify-content: space-between;
 margin-left: 70px;
 position: relative;
 width: 189px;
@@ -44,8 +45,6 @@ body a#linkedin img {
 }
 
 body main {
-  margin: none;
-  padding: none;
   background-color: rgba(198, 206, 240, 0.568);
   display: inline-block;
 }
