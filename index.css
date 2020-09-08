@@ -1,15 +1,7 @@
-
-* {
-  /* margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 10px;
-  margin-bottom: 10px; */
-
-
-}
+/* DESKTOP */
 
 body header {
-display: inline;
+display: flex;
 position: absolute;
 height: 70px;
 width: 100%;
@@ -82,6 +74,10 @@ body main .mainly-content ul {
   font-family: 'Gayathri', sans-serif;
 }
 
+body main .mainly-content ul li {
+  cursor: pointer;
+}
+
 
 body main .mainly-content ul li:hover {
   transition: 200ms;
@@ -125,8 +121,6 @@ body main .contact-me a:hover {
 
 body main .contact-me p {
   font-size: 22px;
+  font-weight: bold;
 }
-
-
-
 
