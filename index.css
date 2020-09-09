@@ -1,125 +1,155 @@
-/* DESKTOP */
 
-body header {
-display: flex;
-height: 70px;
-width: 100%;
-top: 0px;
-background: #ffffff;
+
+body {
+  min-height: 100vh; /*importante p manter o footer la em baixo*/
+  display: grid; /*importante p manter o footer la em baixo*/
 }
 
-body header h1 {
-flex-direction: column;
-justify-content: space-between;
-margin-left: 70px;
-position: relative;
-width: 189px;
-height: 28px;
-top: 20px;
-
-font-family: 'Lato', sans-serif;
-font-weight: bold;
-font-size: 24.375px;
-line-height: 29px;
-
-text-transform: uppercase;
-
-color: #000000;
-}
-
-body a#github img{
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 1350px;
-  top: 20px;
-
-}
-
-body a#linkedin img {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 1400px;
-  top: 20px;
-}
-
-body main {
-  background-color: rgba(198, 206, 240, 0.568);
-  display: inline-block;
+.wrapper {
+  min-height: 100%; /*importante p manter o footer la em baixo*/
+  display: grid; /*importante p manter o footer la em baixo*/
+  grid-template-rows: auto 1fr auto; /*importante p manter o footer la em baixo*/
 }
 
 
-body main .mainly-content h1 {
-  
-  margin-top: 125px;
-  position: relative;
+header.page-header {
+  width: 100%;
+  height: 80px;
+  padding: 22px 70px 0px 70px ;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+header.page-header h1 {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+}
+
+header.page-header a img {
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: relative; /*gambiarra p deixar a imagem na mesma altura */
+  top: -40px; /*gambiarra p deixar a imagem na mesma altura */
+  left: 95%; /*gambiarra p deixar a imagem na mesma altura */
+  margin-left: 25px;
+}
+
+header.page-header img {
+  height: 28px;
+  width: 28px;
+  color: white;
+  position: relative; /*gambiarra p deixar a imagem na mesma altura */
+  top: -40px; /*gambiarra p deixar a imagem na mesma altura */
+  left: 90%; /*gambiarra p deixar a imagem na mesma altura */
+  margin-left: 25px;
+}
+
+/* estilização do corpo da pagina */
+
+
+main.page-body {
+  background-color: rgba(128, 128, 128, 0.1);
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 30px;
   font-family: 'Gayathri', sans-serif;
 }
 
-body main  .mainly-content h3 {
-  /* text-decoration: underline; */
-  text-align: center;
-  margin-bottom: 30px;
+.title {
+  padding: 0px 70px 0px 70px;
 }
 
-body main .mainly-content ul {
-  font-size: 24px;
-  text-align: center;
+.title h1 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 36px;
+}
+
+
+.title h3 {
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+li{
   list-style-type: none;
-  font-family: 'Gayathri', sans-serif;
+  margin-top: 15px;
+  font-size: 22px;
 }
 
-body main .mainly-content ul li {
+li:hover{
+  font-weight: bold;
+  color: #071BDC;
   cursor: pointer;
 }
 
-
-body main .mainly-content ul li:hover {
-  transition: 200ms;
-  font-weight: bold;
-  color: blue;
+li img {
+  margin-left: 5px;
+  height: 24px;
+  width: 24px;
 }
 
-body main .about-me {
-  margin-top: 30px;
-  margin-left: 10%;
-  max-width: 80%;
-  text-align: center;
+.about-me {
+  padding: 30px 70px 30px 70px;
+  background-color: rgba(255, 255, 255, 0.473);
+  margin-top: 60px;
   font-size: 24px;
 }
 
-body main .contact-me {
-  
-  margin-top: 40px;
-  text-align: center;
-}
-
-body main .contact-me h3 {
-  text-decoration: underline;
-  text-transform: uppercase;
+.about-me h4 {
+  padding-bottom: 10px ;
   font-size: 26px;
-  color: blue;
   font-weight: bold;
+  text-align: left;
 }
 
-body main .contact-me .links a{
- 
-  font-size: 22px;
-  align-items: center;
-  color: black;
-  
+.links {
+  font-size: 28px;
+  padding: 60px 70px 60px 70px;
+  color:#071BDC;
 }
 
-body main .contact-me a:hover {
-  color: rgb(13, 24, 122);
+.links a:hover {
+  text-decoration: none;
+  color: #020d68;
 }
 
-body main .contact-me p {
-  font-size: 22px;
+.contacte-me {
+  background-color: white;
+  padding: 30px 70px 8px 70px;
+}
+
+.contacte-me h3 {
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+
+.contacte-me a {
+  font-size: 26px;
+}
+
+.contacte-me a:hover {
+  text-decoration: none;
   font-weight: bold;
+  color: #020d68;
 }
+
+.contacte-me p {
+  font-size: 28px;
+}
+
+
+/* estilização do footer da pagina */
+
+footer.page-footer {
+  height: 70px;
+  background-color: black;
+  color: rgba(128, 128, 128, 0.938);
+  font-family: 'Gayathri', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 25px 0px;
+}
+
 
