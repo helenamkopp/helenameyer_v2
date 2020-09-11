@@ -103,6 +103,10 @@ li img {
   text-align: left;
 }
 
+.about-me p {
+  text-align: center;
+}
+
 .links {
   font-size: 28px;
   padding: 60px 70px 60px 70px;
@@ -150,6 +154,8 @@ footer.page-footer {
   text-align: center;
   padding: 25px 0px;
 }
+
+/* Dispositivos com telas de no maximo 415px de largura, vão ter esse comportamento de CSS */
 
 @media only screen and (max-device-width: 415px) {
   header.page-header {
@@ -200,7 +206,152 @@ footer.page-footer {
     width: 22px;
   }
 
+  .about-me {
+    padding: 30px 15px 30px 15px;
+    margin-top: 10px;
+  }
+  
+  .about-me h4 {
+    font-size: 24px;
+    padding-left: 15px;
+  }
+
+  .about-me p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px 25px 0 px 25px;
+    font-size: 20px;
+  }
+
+  .links {
+    font-size: 26px;
+    padding: 40px 50px 40px 50px;
+  }
+
+  .links a {
+    color: #020846;
+  }
+
+  .contacte-me h3 {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+  
+  .contacte-me a {
+    font-size: 25px;
+    color: #091591;
+  }
+
+  .contacte-me p {
+    font-size: 25px;
+  }
+
+  footer.page-footer {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+}
+
+/* Dispositivos com telas entre 415px 1030px de largura, vão ter esse comportamento de CSS */
+/* Aqui de 415px para 1025px, só mudei uma configuração de header para deixar os icones organizados. */
+
+@media (min-device-width: 415px) and (max-device-width: 1030px) {
+  header.page-header {
+    width: 94%;
+    height: 80px;
+    padding: 24px 70px 0px 15px ;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+  }
+
+  header.page-header h1 {
+    font-size: 27px;
+  }
+
+  header.page-header a img {
+    height: 29px;
+    width: 29px;
+  }
 
   
+  .title {
+    padding: 20px 0px 0px 0px;
+  }
   
+  .title h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 32px;
+  }
+  
+  
+  .title h3 {
+    margin-top: 15px;
+    font-size: 26px;
+  }
+
+  ul {
+    padding: 15px 15px 15px 15px;
+  }
+
+  li{
+    font-size: 25px;
+  }
+  
+  li img {
+    margin-left: 5px;
+    height: 22px;
+    width: 22px;
+  }
+
+  .about-me {
+    padding: 30px 15px 30px 15px;
+    margin-top: 10px;
+  }
+  
+  .about-me h4 {
+    font-size: 25px;
+    padding-left: 15px;
+  }
+
+  .about-me p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px 25px 0 px 25px;
+    font-size: 23px;
+  }
+
+  .links {
+    font-size: 27px;
+    padding: 40px 50px 40px 50px;
+  }
+
+  .links a {
+    color: #020846;
+  }
+
+  .contacte-me h3 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+  
+  .contacte-me a {
+    font-size: 26px;
+    color: #091591;
+  }
+
+  .contacte-me p {
+    font-size: 26px;
+  }
+
+  footer.page-footer {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
 }
