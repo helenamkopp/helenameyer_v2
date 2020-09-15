@@ -1,0 +1,274 @@
+body {
+  min-height: 100vh; /*importante p manter o footer la em baixo*/
+  display: grid; /*importante p manter o footer la em baixo*/
+}
+
+.wrapper {
+  min-height: 100%; /*importante p manter o footer la em baixo*/
+  display: grid; /*importante p manter o footer la em baixo*/
+  grid-template-rows: auto 1fr auto; /*importante p manter o footer la em baixo*/
+}
+
+header.page-header {
+  width: 100%;
+  height: 80px;
+  padding: 22px 70px 0px 70px ;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+header.page-header h1 {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+}
+
+header.page-header a img {
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: relative; /*gambiarra p deixar a imagem na mesma altura */
+  top: -40px; /*gambiarra p deixar a imagem na mesma altura */
+  left: 95%; /*gambiarra p deixar a imagem na mesma altura */
+  margin-left: 25px;
+}
+
+main.page-body {
+  background-color: rgba(128, 128, 128, 0.1);
+  text-align: center;
+  font-family: 'Gayathri', sans-serif;
+}
+
+.title {
+  padding: 0px 70px 0px 70px;
+}
+
+.title h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.title img {
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.title h4 {
+  font-size: 22px;
+  margin-top: 15px;
+
+}
+
+/* Organização dos links */
+
+
+.links {
+  background-color: white;
+  font-size: 28px;
+  padding: 60px 70px 60px 70px;
+  color:#071BDC;
+}
+
+.links a:hover {
+  text-decoration: none;
+  color: #020d68;
+}
+
+.contacte-me {
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 30px 70px 8px 70px;
+}
+
+.contacte-me h3 {
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+
+.contacte-me a {
+  font-size: 26px;
+}
+
+.contacte-me a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #020d68;
+}
+
+.contacte-me p {
+  font-size: 28px;
+}
+
+
+/* estilização do footer da pagina */
+
+footer.page-footer {
+  height: 70px;
+  background-color: black;
+  color: rgba(128, 128, 128, 0.938);
+  font-family: 'Gayathri', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+
+/* Dispositivos com telas de no maximo 415px de largura, vão ter esse comportamento de CSS */
+
+@media only screen and (max-device-width: 415px) {
+  header.page-header {
+    width: 88%;
+    height: 80px;
+    padding: 24px 60px 0px 15px ;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+  }
+
+  header.page-header h1 {
+    font-size: 26px;
+  }
+
+  header.page-header a img {
+    height: 28px;
+    width: 28px;
+  }
+
+  
+  .title {
+    padding: 0px 0px 0px 0px;
+  }
+  
+  .title h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+
+  .title img {
+    width: 95%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .title h4 {
+    font-size: 18px;
+    margin-top: 15px;
+  
+  }
+  
+/* Organização dos links */
+
+  .links {
+    background-color: white;
+    font-size: 24px;
+    padding: 40px 50px 40px 50px;
+  }
+
+  .links a {
+    color: #020846;
+  }
+
+  .contacte-me {
+    background-color: rgba(128, 128, 128, 0.1);
+  }
+
+  .contacte-me h3 {
+    font-size: 23px;
+    padding-bottom: 5px;
+  }
+  
+  .contacte-me a {
+    font-size: 24px;
+    color: #091591;
+  }
+
+  .contacte-me p {
+    font-size: 24px;
+  }
+
+  footer.page-footer {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+/* Dispositivos com telas entre 415px 1030px de largura, vão ter esse comportamento de CSS */
+/* Aqui de 415px para 1025px, só mudei uma configuração de header para deixar os icones organizados. */
+
+@media (min-device-width: 415px) and (max-device-width: 1030px) {
+  header.page-header {
+    width: 94%;
+    height: 80px;
+    padding: 24px 70px 0px 15px ;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+  }
+
+  header.page-header h1 {
+    font-size: 27px;
+  }
+
+  header.page-header a img {
+    height: 29px;
+    width: 29px;
+  }
+
+  
+  .title {
+    padding: 20px 0px 0px 0px;
+  }
+  
+  .title h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 30px;
+  }
+
+  .title img {
+    width: 92%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .title h4 {
+    font-size: 22px;
+    margin-top: 15px;
+  
+  }
+/* Organização dos links */
+
+  .links {
+    background-color: white;
+    font-size: 27px;
+    padding: 40px 50px 40px 50px;
+  }
+
+  .links a {
+    color: #020846;
+  }
+
+  .contacte-me {
+    background-color: rgba(128, 128, 128, 0.1);
+  }
+
+  .contacte-me h3 {
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+  
+  .contacte-me a {
+    font-size: 26px;
+    color: #091591;
+  }
+
+  .contacte-me p {
+    font-size: 26px;
+  }
+
+  footer.page-footer {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+}
