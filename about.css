@@ -57,7 +57,7 @@ header.page-header img {
   padding: 30px 70px 30px 70px;
   background-color: rgba(128, 128, 128, 0.1);
   font-size: 20px;
-  font-family: 'Gayathri', sans-serif;
+  
 }
 
 .about-me h4 {
@@ -68,6 +68,7 @@ header.page-header img {
 }
 
 .about-me p {
+  font-family: 'Gayathri', sans-serif;
   text-align: justify;
 }
 
