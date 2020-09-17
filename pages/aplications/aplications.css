@@ -37,6 +37,7 @@ header.page-header a img {
   top: -40px; /*gambiarra p deixar a imagem na mesma altura */
   left: 95%; /*gambiarra p deixar a imagem na mesma altura */
   margin-left: 25px;
+ 
 }
 
 main.page-body {
@@ -56,6 +57,7 @@ main.page-body {
 }
 
 .title img {
+  border: 2px solid #020d68;
   border-radius: 4px;
   margin-bottom: 30px;
 }
